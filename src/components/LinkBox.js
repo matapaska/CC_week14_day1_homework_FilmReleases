@@ -6,7 +6,7 @@ class LinkBox extends Component{
     render(){
         return(
             <div className = "link-box">
-                <button><a href = {this.props.link.url}>View upcoming film releases >></a></button>
+                <button><a href = {this.props.link.url}>View more upcoming releases >></a></button>
             </div>
         )
 
