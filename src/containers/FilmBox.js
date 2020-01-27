@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import FilmList from '../components/FilmList'
+import LinkBox from '../components/LinkBox'
 
 class FilmBox extends Component{
 
@@ -31,7 +32,12 @@ class FilmBox extends Component{
                   name: "Captain Marvel",
                   url: "https://www.imdb.com/title/tt4154664/?ref_=rlm"
                 }
-              ]
+              ],
+            link:[
+                {
+                    url: "https://www.imdb.com/calendar/?region=gb"
+            }
+        ]
         }
     }
 
@@ -42,6 +48,7 @@ class FilmBox extends Component{
                 <hr/>
             
                 <FilmList data={this.state.data}/>
+                <LinkBox link={this.state.link}/>
             </div>
         )
     }
